@@ -11,8 +11,6 @@ Historically, the URL syntax was starting with `/f/?url=` like `https://my-che-s
 
 Start a workspace with a GitHub, GitLab, or Bitbucket repository by using the {prod-short} URL prepended with a `#` character and appended with the repository link. Using the example of Eclipse Che hosted by Red Hat: link:https://workspaces.openshift.com#https://github.com/eclipse-che/che-server[].
 
-Using the example of Eclipse Che hosted by Red Hat: link:https://workspaces.openshift.com#https://github.com/eclipse-che/che-server[]
-
 {prod-short} start a workspace and clone the repository `https://github.com/eclipse-che/che-server` using the default branch.
 
 {prod-short} will search for a `.devfile.yaml` or `devfile.yaml` file in the given repository. The devfile describe the containers and commands to use for that project. Omitting that file will result in a default container. The default container provides different languages (including Java, Node.js, Python, PHP, Golang, etc) and tools (including `curl`, `jq`, `yq`, etc).
