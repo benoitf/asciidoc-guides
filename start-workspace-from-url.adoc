@@ -11,7 +11,7 @@ Historically, the URL syntax was starting with `/f/?url=` like `https://my-che-s
 
 Start a workspace with a GitHub, GitLab, or Bitbucket repository by using the {prod-short} URL prepended with a `#` character and appended with the repository link.
 
-Example using Eclipse Che hosted by Red Hat: link:https://workspaces.openshift.com#https://github.com/eclipse-che/che-server[]
+Using the example of Eclipse Che hosted by Red Hat: link:https://workspaces.openshift.com#https://github.com/eclipse-che/che-server[]
 
 {prod-short} start a workspace and clone the repository `https://github.com/eclipse-che/che-server` using the default branch.
 
