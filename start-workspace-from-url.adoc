@@ -3,7 +3,7 @@
 = Starting a workspace from an URL
 
 After using the getting started examples from the Dashboard, users will want to create workspaces from existing Git repositories.
-Create workspaces from a Git repository by entering a custom URL on the {prod-short} dashboard page.
+Create a workspace from a Git repository by entering a custom URL on the {prod-short} dashboard page.
 
 == Short URL syntax
 
