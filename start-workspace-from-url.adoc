@@ -9,7 +9,7 @@ Create workspaces from a Git repository by entering a custom URL on the {prod-sh
 
 Historically, the URL syntax was starting with `/f/?url=` like `https://my-che-server/f/?url=https://github.com/my/repository` but it was complex and error prone. While this syntax is still supported, short syntax should be used.
 
-Start a workspace from a GitHub, Gitlab or Bitbucket repository by adding a `#` character to the {prod-short} URL suffixed by the repository link.
+Start a workspace with a GitHub, GitLab, or Bitbucket repository by using the {prod-short} URL prepended with a `#` character and appended with the repository link.
 
 Example using Eclipse Che hosted by Red Hat: link:https://workspaces.openshift.com#https://github.com/eclipse-che/che-server[]
 
