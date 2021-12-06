@@ -80,17 +80,11 @@ Example: `https://che-server#https://github.com/example/foo?df=mydevfile.yaml`
 
 == Policy to create or reuse an existing workspace
 
-Each time a user click on a {prod-short} URL link, it's possible to define to create a fresh workspace or reuse a previous one.
-The default policy is `perClick` meaning that {prod-short} creates a workspace on every click.
+Clicks on a {prod-short} URL link create a fresh workspace when no previous matching workspace exists.
 
-{prod-short} supports the following options for `policies.create` query parameter:
+Use `?new` at the end of the URL to always create a fresh workspace on every click
 
-* `perclick`:  The default strategy, which creates a fresh workspace on every click.
-
-* `peruser`: Create the workspace if it is not yet existing or open the previous one.
-
-Example: `https://che-server#https://github.com/example/foo?policies.create=peruser` to create or reopen the workspace created from this repository.
-
+Example: `https://che-server#https://github.com/example/foo?new` to create a new workspace from this repository.
 
 == Support of devfiles
 
