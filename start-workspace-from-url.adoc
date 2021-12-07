@@ -61,7 +61,7 @@ Example: `https://che-server#https://github.com/example/foo?policies.create=peru
 == Support of devfiles
 
 {prod-short} uses the {devworkspace} engine that targets v2 devfiles. (SchemaVersion is 2.1.0)
-Using devfile v1 is still possible but deprecated. Under the hood, https://github.com/che-incubator/devfile-converter[converter library], converts devfiles v1 to devfiles v2.
+Use of devfile v1 is deprecated. Under the hood, https://github.com/che-incubator/devfile-converter[converter library] converts devfiles v1 to devfiles v2.
 
 == Specific options from various Git providers
 
