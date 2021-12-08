@@ -16,6 +16,37 @@ Then {prod-short} starts a workspace and clones the repository `\https://github.
 {prod-short} also searches for a `.devfile.yaml` or `devfile.yaml` file in the given repository. The devfile describes the containers and commands to use for that project. Omitting this file will result in a default container. The default container provides different languages (including Java, Node.js, Python, PHP, Golang, etc) and tools (including `curl`, `jq`, `yq`, etc).
 
 Devfile information: https://devfile.io/[devfile specification]
+== URL syntax by Git provider
+
+URL syntax for cloning GitHub repositories to the starting workspace:
+
+* To clone the default branch on GitHub to the starting workspace:
++
+`#https://github.com/_<user_or_org>_/_<repository>_`
++
+Example: `#https://github.com/eclipse-che/che-plugin-registry`
+
+* To clone a specified branch on GitHub to the starting workspace:
++
+`#https://github.com/_<user_or_org>_/_<repository>_/tree/_<branch-name>_`
++
+Example: `#https://github.com/eclipse-che/che-plugin-registry/tree/7.39.x`
+
+* To clone the branch of a pull request on GitHub to the starting workspace:
++
+`#https://github.com/_<user_or_org>_/_<repository>_/pull/_<pull-request-id>_`
++
+Example: `#https://github.com/eclipse-che/che-plugin-registry/pull/1097`
+
+URL syntax for cloning GitLab repositories:
+
+* To clone the default branch on GitLab to the starting workspace:
++
+`#https://gitlab.com/_<user_or_org>_/_<repository>_`
+
+* To clone a specified branch on GitLab to the starting workspace:
++
+`#https://gitlab.com/_<user_or_org>_/_<repository>_/-/tree/_<branch>_`
 
 
 == Using a different editor or `IDE`
