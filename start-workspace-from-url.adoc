@@ -64,26 +64,3 @@ Example: `https://che-server#https://github.com/example/foo?policies.create=peru
 {prod-short} uses the {devworkspace} engine that targets devfiles v2 with `schemaVersion: 2.1.0`.
 Use of devfile v1 is deprecated. Under the hood, https://github.com/che-incubator/devfile-converter[converter library] converts devfiles v1 to devfiles v2.
 
-== Specific options from various Git providers
-
-=== Using `github.com` provider:
-
-==== Using the default branch:
-
-`#https://github.com/<org>/<repository-name>` will use the default branch configured for the repository and not for example search for`main`
-
-==== From a custom branch:
-https://github.com/<org>/<repository-name>/tree/<branch-name> will use the provided branch rather than the default one. example: `#https://github.com/eclipse-che/che-plugin-registry/tree/7.39.x`
-
-==== From a pull request:
-https://github.com/<org>/<repository-name>/pull/<pull-request-id> to open the branch of the given pull request. example: `#https://github.com/eclipse-che/che-plugin-registry/pull/1097`
-
-
-=== Using `gitlab` provider:
-
-==== Using the default branch:
-
-`#https://gitlab.com/<org>/<repository-name>` will use the default branch.
-
-==== With a custom branch:
-`#https://gitlab.com/<org>/<user>/-/tree/<branch-name>`` will use the provided branch rather than the default one.
