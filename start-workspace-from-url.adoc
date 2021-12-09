@@ -57,7 +57,7 @@ The default IDE is a property of {prod-short} and default value is `eclipse/che-
 https://www.eclipse.org/che/docs/che-7/installation-guide/advanced-configuration-options-for-the-che-server-component/#devfile-defaults
 
 Overriding the default editor is possible with `?che-editor=<editor-id>` parameter. The `editor-id` comes from the identifier of the IDE on the plug-in registry.
-
++
 Example: `https://che-server#https://github.com/example/foo?che-editor=eclipse/che-theia/next` to use the next version of Theia (build after each commit) 
 
 Some of IDEs keys are `eclipse/che-theia/latest`, `eclipse/che-theia/next`, `che-incubator/intellij-community/latest`, `che-incubator/pycharm/latest` or `che-incubator/che-code/insiders`
