@@ -14,7 +14,7 @@ To start a workspace with a clone of a GitHub, GitLab, or Bitbucket repository, 
 
 Then {prod} starts a workspace and clones the repository `\https://github.com/eclipse-che/che-server`.
 
-{prod-short} also searches for a `.devfile.yaml` or `devfile.yaml` file in the given repository. The devfile describes the containers and commands to use for that project. Omitting this file will result in a default container. The default container provides different languages (including Java, Node.js, Python, PHP, Golang, etc) and tools (including `curl`, `jq`, `yq`, etc).
+{prod} also searches for a `.devfile.yaml` or `devfile.yaml` file in the given repository. The devfile describes the containers and commands to use for that project. Omitting this file will result in a default container. The default container provides different languages (including Java, Node.js, Python, PHP, Golang, etc) and tools (including `curl`, `jq`, `yq`, etc).
 
 Devfile information: https://devfile.io/[devfile specification]
 
