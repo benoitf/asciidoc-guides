@@ -78,13 +78,15 @@ Short name for the parameter `devfilePath` exists: `df`
 Example: `https://che-server#https://github.com/example/foo?df=mydevfile.yaml`
 
 
-== Policy to create or reuse an existing workspace
+= URL syntax for workspace names
 
-Clicks on a {prod-short} URL link create a fresh workspace when no previous matching workspace exists.
+With the DevWorkspace Engine enabled:
 
-Use `?new` at the end of the URL to always create a fresh workspace on every click
+If you enter a URL such as `https://che#http://github.com/foo/bar` and you don’t have any workspace named `bar`, {prod} creates a workspace named `bar` and clones the GitHub repository.
 
-Example: `https://che-server#https://github.com/example/foo?new` to create a new workspace from this repository.
+Each time you enter a URL such as `https://che#http://github.com/foo/bar` again, {prod} reopens the previously created workspace `bar`. (If you deleted the previously created `bar` workspace, entering `https://che#http://github.com/foo/bar` results in {prod} creating another workspace named `bar`.)
+
+To create another workspace each time you enter the same URL, enter the URL appended with `?new` in the URL format `https://che#http://github.com/foo/bar?new`. Even if you already have a workspace named `bar`, each time you enter such URL, {prod} will create another, sequentially named workspace (example: `bar-abcde`).
 
 == Support of devfiles
 
