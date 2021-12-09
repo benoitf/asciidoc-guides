@@ -1,9 +1,10 @@
 :prod-short: Che
 
-= Starting a workspace from an URL
+= Starting a workspace by entering a URL
 
-After using the getting started examples from the Dashboard, users will want to create workspaces from existing Git repositories.
-Create a workspace from a Git repository by entering a custom URL on the {prod-short} dashboard page.
+As a user, you can create a workspace containing a clone of a Git repository by entering a custom URL in the address bar of your browser.
+
+As a user, you can also create a workspace containing a clone of a Git repository by entering the URL of the Git repository on the {prod-short} dashboard page.
 
 == Short URL syntax for cloning hosted git repositories
 
