@@ -1,4 +1,4 @@
-:prod-short: Che
+:prod: Eclipse Che
 
 = Starting a workspace by entering a URL
 
