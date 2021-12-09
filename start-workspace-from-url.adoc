@@ -74,7 +74,7 @@ Use the parameter `?devfilePath=mydevfile.yaml` at the end of the `https://che-s
 
 Example: `https://che-server#https://github.com/example/foo?devfilePath=mydevfile.yaml`
 
-Short name for the parameter `devfilePath` exists: `df`
+The short name for the parameter `devfilePath` is `df`.
 +
 Example: `https://che-server#https://github.com/example/foo?df=mydevfile.yaml`
 
