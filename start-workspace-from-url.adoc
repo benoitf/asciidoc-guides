@@ -69,7 +69,7 @@ Example: `https://che-server#https://github.com/example/foo?che-editor=https://e
 
 If the devfile file name is different from the default search pattern, which is `.devfile.yaml` or `devfile.yaml`, it is possible to override that name.
 
-Use the parameter `?devfilePath=mydevfile.yaml` at the end of the `https://che-server#url-to-git-repository`
+Use the parameter `?devfilePath=mydevfile.yaml` at the end of `https://che-server#url-to-git-repository`.
 
 Example: `https://che-server#https://github.com/example/foo?devfilePath=mydevfile.yaml`
 
