@@ -4,7 +4,7 @@
 
 As a user, you can create a workspace containing a clone of a Git repository by entering a custom URL in the address bar of your browser.
 
-As a user, you can also create a workspace containing a clone of a Git repository by entering the URL of the Git repository on the {prod-short} dashboard page.
+As a user, you can also create a workspace containing a clone of a Git repository by entering the URL of the Git repository on the {prod} dashboard page.
 
 == Short URL syntax for cloning hosted git repositories
 
