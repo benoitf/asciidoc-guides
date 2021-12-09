@@ -20,7 +20,7 @@ Devfile information: https://devfile.io/[devfile specification]
 
 == URL syntax by Git provider
 
-URL syntax for cloning GitHub repositories to the starting workspace:
+URL syntax for cloning GitHub-hosted repositories to the starting workspace:
 
 * To clone the default branch on GitHub to the starting workspace:
 +
