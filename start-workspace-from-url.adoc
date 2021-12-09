@@ -40,7 +40,7 @@ Example: `#https://github.com/eclipse-che/che-plugin-registry/tree/7.39.x`
 +
 Example: `#https://github.com/eclipse-che/che-plugin-registry/pull/1097`
 
-URL syntax for cloning GitLab repositories:
+URL syntax for cloning GitLab-hosted repositories:
 
 * To clone the default branch on GitLab to the starting workspace:
 +
