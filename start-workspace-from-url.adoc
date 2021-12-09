@@ -63,7 +63,7 @@ Example: `https://che-server#https://github.com/example/foo?che-editor=eclipse/c
 Some of IDEs keys are `eclipse/che-theia/latest`, `eclipse/che-theia/next`, `che-incubator/intellij-community/latest`, `che-incubator/pycharm/latest` or `che-incubator/che-code/insiders`
 
 The parameter `?che-editor` accepts a link to the devfile hosted on a public server (with Cross-Origin Resource Sharing (CORS) enabled).
-
++
 Example: `https://che-server#https://github.com/example/foo?che-editor=https://eclipse-che.github.io/che-plugin-registry/main/v3/plugins/che-incubator/che-code/insiders/devfile.yaml`
 
 == Using a different devfile file from the repository
