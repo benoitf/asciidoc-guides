@@ -1,6 +1,6 @@
 :prod: Eclipse Che
 :prod-short: Che
-:prod-url:
+:prod-url: https://che-host:che-port
 
 = Starting a workspace by entering a URL
 
