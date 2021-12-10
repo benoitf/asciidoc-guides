@@ -12,7 +12,7 @@ As a user, you can also create a workspace containing a clone of a Git repositor
 
 In the earlier versions of {prod}, the {prod-short} URL syntax began with `/f/?url=`, for example `https://{prod-url}/f/?url=https://github.com/my/repository`, but it was complex and error-prone. While that syntax is still supported, short syntax should be used as follows:
 
-To start a workspace with a clone of a GitHub, GitLab, or Bitbucket repository, go to your browser's address bar and enter the {prod} URL, prepended with a `#` character and appended with the repository link. Using the example of Eclipse Che hosted by Red Hat: link:https://workspaces.openshift.com#https://github.com/eclipse-che/che-server[].
+To start a workspace with a clone of a GitHub, GitLab, or Bitbucket repository, go to your browser's address bar and enter the {prod-short} URL, prepended with a `#` character and appended with the repository link. Using the example of Eclipse Che hosted by Red Hat: link:https://workspaces.openshift.com#https://github.com/eclipse-che/che-server[].
 
 Then {prod} starts a workspace and clones the repository `\https://github.com/eclipse-che/che-server`.
 
@@ -59,34 +59,34 @@ The default IDE is a property of {prod} and default value is `eclipse/che-theia/
 
 Overriding the default editor is possible with `?che-editor=<editor-id>` parameter. The `editor-id` comes from the identifier of the IDE on the plug-in registry.
 +
-Example: `https://che-server#https://github.com/example/foo?che-editor=eclipse/che-theia/next` to use the next version of Theia (build after each commit) 
+Example: `https://{prod-url}#https://github.com/example/foo?che-editor=eclipse/che-theia/next` to use the next version of Theia (build after each commit) 
 
 Some of IDEs keys are `eclipse/che-theia/latest`, `eclipse/che-theia/next`, `che-incubator/intellij-community/latest`, `che-incubator/pycharm/latest` or `che-incubator/che-code/insiders`
 
 The parameter `?che-editor` accepts a link to the devfile hosted on a public server (with Cross-Origin Resource Sharing (CORS) enabled).
 +
-Example: `https://che-server#https://github.com/example/foo?che-editor=https://eclipse-che.github.io/che-plugin-registry/main/v3/plugins/che-incubator/che-code/insiders/devfile.yaml`
+Example: `https://{prod-url}#https://github.com/example/foo?che-editor=https://eclipse-che.github.io/che-plugin-registry/main/v3/plugins/che-incubator/che-code/insiders/devfile.yaml`
 
 == Using a different devfile file from the repository
 
 If the devfile file name is different from the default search pattern, which is `.devfile.yaml` or `devfile.yaml`, it is possible to override that name.
 
-Use the parameter `?devfilePath=mydevfile.yaml` at the end of `https://che-server#url-to-git-repository`.
+Use the parameter `?devfilePath=mydevfile.yaml` at the end of `https://{prod-url}#__<git_repository_url>__`.
 +
-Example: `https://che-server#https://github.com/example/foo?devfilePath=mydevfile.yaml`
+Example: `https://{prod-url}#https://github.com/example/foo?devfilePath=mydevfile.yaml`
 
 The short name for the parameter `devfilePath` is `df`.
 +
-Example: `https://che-server#https://github.com/example/foo?df=mydevfile.yaml`
+Example: `https://{prod-url}#https://github.com/example/foo?df=mydevfile.yaml`
 
 
 = URL syntax for workspace names
 
 With the DevWorkspace Engine enabled:
 
-If you enter a URL such as `https://che#http://github.com/foo/bar` and you don’t have any workspace named `bar`, {prod} creates a workspace named `bar` and clones the GitHub repository.
+If you enter a URL such as `https://{prod-url}#http://github.com/foo/bar` and you don’t have any workspace named `bar`, {prod} creates a workspace named `bar` and clones the GitHub repository.
 
-Each time you enter a URL such as `https://che#http://github.com/foo/bar` again, {prod} reopens the previously created workspace `bar`. (If you deleted the previously created `bar` workspace, entering `https://che#http://github.com/foo/bar` results in {prod} creating another workspace named `bar`.)
+Each time you enter a URL such as `https://{prod-url}#http://github.com/foo/bar` again, {prod} reopens the previously created workspace `bar`. (If you deleted the previously created `bar` workspace, entering `https://{prod-url}#http://github.com/foo/bar` results in {prod} creating another workspace named `bar`.)
 
 To create another workspace each time you enter the same URL, enter the URL appended with `?new` in the URL format `https://che#http://github.com/foo/bar?new`. Even if you already have a workspace named `bar`, each time you enter such URL, {prod} will create another, sequentially named workspace (example: `bar-abcde`).
 
