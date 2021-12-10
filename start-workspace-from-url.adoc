@@ -54,7 +54,7 @@ URL syntax for cloning GitLab-hosted repositories:
 
 == Using a different editor or `IDE`
 
-The default IDE is a property of {prod} and default value is `eclipse/che-theia/latest`. See the docs for the link:https://www.eclipse.org/che/docs/che-7/installation-guide/advanced-configuration-options-for-the-che-server-component/#devfile-defaults[Devfile defaults].
+The default IDE is a property of {prod}, and the default value is `eclipse/che-theia/latest`. See the docs for the link:https://www.eclipse.org/che/docs/che-7/installation-guide/advanced-configuration-options-for-the-che-server-component/#devfile-defaults[Devfile defaults].
 
 Overriding the default editor is possible with `?che-editor=<editor-id>` parameter. The `editor-id` comes from the identifier of the IDE on the plug-in registry.
 +
