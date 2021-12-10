@@ -73,7 +73,7 @@ Use the parameter `?devfilePath=mydevfile.yaml` at the end of `https://{prod-url
 * Example: `{prod-url}#https://github.com/example/foo?devfilePath=mydevfile.yaml`
 
 The short name for the `devfilePath` parameter is `df`.
-* Example: `https://{prod-url}#https://github.com/example/foo?df=mydevfile.yaml`
+* Example: `{prod-url}#https://github.com/example/foo?df=mydevfile.yaml`
 
 
 = URL syntax for workspace names
