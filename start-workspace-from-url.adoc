@@ -88,7 +88,7 @@ If you enter a URL such as `https://{prod-url}#http://github.com/foo/bar` and yo
 
 Each time you enter a URL such as `https://{prod-url}#http://github.com/foo/bar` again, {prod} reopens the previously created workspace `bar`. (If you deleted the previously created `bar` workspace, entering `https://{prod-url}#http://github.com/foo/bar` results in {prod} creating another workspace named `bar`.)
 
-To create another workspace each time you enter the same URL, enter the URL appended with `?new` in the URL format `https://che#http://github.com/foo/bar?new`. Even if you already have a workspace named `bar`, each time you enter such URL, {prod} will create another, sequentially named workspace (example: `bar-abcde`).
+To create another workspace each time you enter the same URL, enter the URL appended with `?new` in the URL format `https://{prod-url}#http://github.com/foo/bar?new`. Even if you already have a workspace named `bar`, each time you enter such URL, {prod} will create another, sequentially named workspace (example: `bar-abcde`).
 
 == Support of devfiles
 
