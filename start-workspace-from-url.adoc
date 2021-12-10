@@ -80,7 +80,7 @@ The short name for the `devfilePath` parameter is `df`.
 
 With the DevWorkspace Engine enabled:
 
-If you enter a URL such as `https://{prod-url}#http://github.com/foo/bar` and you don’t have any workspace named `bar`, {prod} creates a workspace named `bar` and clones the GitHub repository.
+If you enter a URL such as `{prod-url}#http://github.com/foo/bar` and you don’t have any workspace named `bar`, {prod} creates a workspace named `bar` and clones the GitHub repository.
 
 Each time you enter a URL such as `https://{prod-url}#http://github.com/foo/bar` again, {prod} reopens the previously created workspace `bar`. (If you deleted the previously created `bar` workspace, entering `https://{prod-url}#http://github.com/foo/bar` results in {prod} creating another workspace named `bar`.)
 
