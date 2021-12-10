@@ -9,7 +9,7 @@ As a user, you can create a workspace containing a clone of a Git repository by 
 
 As a user, you can also create a workspace containing a clone of a Git repository by entering the URL of the Git repository on the {prod} dashboard page.
 
-== Short URL syntax for cloning hosted git repositories
+== Short URL syntax for cloning hosted Git repositories
 
 In the earlier versions of {prod}, the {prod-short} URL syntax began with `/f/?url=`, for example `{prod-url}/f/?url=https://github.com/my/repository`, but it was complex and error-prone. While that syntax is still supported, short syntax should be used as follows:
 
@@ -18,7 +18,7 @@ To start a workspace with a clone of a GitHub, GitLab, or Bitbucket repository, 
 
 {prod} also searches for a `.devfile.yaml` or `devfile.yaml` file in the given repository. The devfile describes the containers and commands to use for that project. Omitting this file will result in a default container, which provides different languages (including Java, Node.js, Python, PHP, Golang, etc) and tools (including `curl`, `jq`, `yq`, etc).
 
-For more information on devfiles, see the link:https://devfile.io/[Devfile Documentation].
+For more information about devfiles, see the link:https://devfile.io/[Devfile Documentation].
 
 == URL syntax by Git provider
 
